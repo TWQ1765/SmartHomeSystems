@@ -1,7 +1,7 @@
 #ifndef _GETGPSCOORDINATE_H
 #define _GETGPSCOORDINATE_H
 
-float location(float x, float y);
+//float location(float x, float y);
 
 typedef struct GPScoordinate GPScoordinate;
 struct GPScoordinate {
@@ -23,6 +23,8 @@ typedef enum {
 } State;
 
 void turn(Device device, State state);
+void getGPScoordinate(GPScoordinate *gps);
+
 
 
 #endif // _GETGPSCOORDINATE_H

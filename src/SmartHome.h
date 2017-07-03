@@ -1,7 +1,8 @@
 #ifndef _SMARTHOME_H
 #define _SMARTHOME_H
+#include "getgpscoordinate.h"
 
-float findHypotenuse(float x, float y);
+float findHypotenuse (GPScoordinate gps);
 
 void doSmartThing();
 
