@@ -1,6 +1,6 @@
 #include "unity.h"
 #include <stdio.h>
-#include "SmartHome.c"
+
 #include "SmartHome.h"
 #include "mock_getgpscoordinate.h"
 
@@ -32,11 +32,17 @@ void test_GPScoordinate_given_x_y_expect_h(void){
   TEST_ASSERT_EQUAL(0, getGPScoordinate(GPScoordinate *gps);  //  ex3
 }
 */
-void test_GPScoordinate_(void){
+///*
+void test_findhouselocation_expect(void){
   GPScoordinate gps;
-  gps.x = 210;
-  gps.y = 5300;
-  findHypotenuse_EepectAndReturn(gps);
- // TEST_ASSERT_FLOAT_IS_NOT_NEG_INF(GPScoordinate, EepectAndReturn, NULL);
-  //TEST_ASSERT_FLOAT_IS_NOT_NEG_INF(gps.y );
+  gps.x = 300;
+  gps.y = 300;
+  float rangehouse;
+  findhouselocation();
+ // getGpsCoordinate_ExpectAndReturn(gps);
+  //turn_Expect(KITCHEN_LIGHT, ON);
+  TEST_ASSERT_EQUAL_FLOAT(1, rangehouse); 
+  
 }
+//*/
+	
