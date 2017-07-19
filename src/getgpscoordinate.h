@@ -10,6 +10,8 @@ struct GPScoordinate {
 };
 
 
+
+
 typedef enum {
   GARAGE_DOOR,
   KITCHEN_LIGHT,

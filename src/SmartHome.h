@@ -5,6 +5,9 @@
 //float findreallocation(GPScoordinate gps);
 //float findreallocation(GPScoordinate coor,\
 					GPScoordinate now )
+          
+          
+ 
 float findhouselocation();
 float findoutsideGaragelocation();
 float findgaragelocation();

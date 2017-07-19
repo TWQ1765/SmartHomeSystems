@@ -37,12 +37,21 @@ void test_findhouselocation_expect(void){
   GPScoordinate gps;
   gps.x = 300;
   gps.y = 300;
-  float rangehouse;
-  findhouselocation();
+  //float rangehouse;
+ 
+  getGpscoordinate_ExpectAndReturn(gps);
+	turn_Expect(GARAGE_DOOR,ON);
+ // findhouselocation();
  // getGpsCoordinate_ExpectAndReturn(gps);
   //turn_Expect(KITCHEN_LIGHT, ON);
-  TEST_ASSERT_EQUAL_FLOAT(1, rangehouse); 
-  
+  //TEST_ASSERT_EQUAL_FLOAT(1, rangehouse);  
+  doSmartThing();
 }
-//*/
-	
+/*/
+void test_GPScoordinate_house_expect_same(void){
+  //GPScoordinate house;
+  float x=house.x;
+  
+  TEST_ASSERT_EQUAL_FLOAT(1, x); 
+}
+*/	

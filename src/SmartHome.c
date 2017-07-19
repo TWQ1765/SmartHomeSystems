@@ -3,7 +3,7 @@
 #include "getgpscoordinate.h"
 
 //struct coor coor{
-GPScoordinate house         = { 200 , 5345 }; 
+GPScoordinate house         = { 200 , 5345 };
 GPScoordinate outsideGarage = { 200 , 5300 };
 GPScoordinate garage        = { 215 , 5300 };
 GPScoordinate kitchen       = { 196 , 5400 };
@@ -36,7 +36,7 @@ float findkitchenlocation(GPScoordinate gps,GPScoordinate kitchen )
 //
 void doSmartThing(){
 	
- // GpsCoordinate gps = getGpsCoordinate();
+  GPScoordinate gps = getGpscoordinate();
  
   ///*
   if (findkitchenlocation <= 2)
