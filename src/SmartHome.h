@@ -2,17 +2,15 @@
 #define _SMARTHOME_H
 #include "getgpscoordinate.h"
 
-//float findreallocation(GPScoordinate gps);
-//float findreallocation(GPScoordinate coor,\
-					GPScoordinate now )
-          
-          
+
  
-float findhouselocation();
-float findoutsideGaragelocation();
-float findgaragelocation();
-float findkitchenlocation();
-void doSmartThing();
+float findhouselocation(GPScoordinate gps,GPScoordinate *house);
+float findoutsideGaragelocation(GPScoordinate gps,GPScoordinate outsideGarage);
+float findgaragelocation(GPScoordinate gps,GPScoordinate garage);
+float findkitchenlocation(GPScoordinate gps,GPScoordinate kitchen);
+void  doSmartThing();
 float square(float a);
 //void getGPScoordinate(GPScoordinate *gps);
+
+
 #endif // _SMARTHOME_H

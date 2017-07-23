@@ -10,8 +10,6 @@ struct GPScoordinate {
 };
 
 
-
-
 typedef enum {
   GARAGE_DOOR,
   KITCHEN_LIGHT,
@@ -25,8 +23,8 @@ typedef enum {
 } State;
 
 void turn(Device device, State state);
-void getGPScoordinate(GPScoordinate *gps);
-
+GPScoordinate getGPScoordinate();
+//void  doSmartThing();
 
 
 
